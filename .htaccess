@@ -1,6 +1,4 @@
 RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^trending index.html [NC,L]
 RewriteRule ^tech tech.html [NC,L]
