@@ -3,4 +3,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^trending index.html [NC,L]
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^tech tech.html [NC,L]
+RewriteRule ^pets pets.html [NC,L]
+RewriteRule ^health health.html [NC,L]
+RewriteRule ^sports sports.html [NC,L]
+RewriteRule ^smarthome smarthome.html [NC,L]
+RewriteRule ^dress dress.html [NC,L]
+RewriteRule ^movies movies.html [NC,L]
+RewriteRule ^gaming gaming.html [NC,L]
+RewriteRule ^jewelry index.html [NC,L]
