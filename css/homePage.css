@@ -1,0 +1,338 @@
+/* !  --__--__Trending Section Start__---__--__--*/
+/* ? Trending Title Part // First Two Part Stat*/
+.trending_sec{
+    margin: 2rem 0;
+}
+.trending_sec .trending_container .sec_one{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    padding: 0 2rem;
+}
+.trending_sec .title_post img{
+    width: 100%;
+    height: 40rem;
+}
+.trending_sec .trending_container .sec_one .title_link .link_title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px dotted #000000;
+    border-bottom: 1px dotted #000000;
+    padding: 0.7rem 0;
+}
+.trending_sec .trending_container .sec_one .title_link .link_title .title_star{
+    color: #ffffff;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 1.5rem 0 0;
+    background-color: #1abea6;
+}
+.trending_sec .trending_container .sec_one .title_link .link_title a{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+} 
+.trending_sec .trending_container .sec_one .title_post .header_link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    padding: 1rem 1rem;
+    background-color: #e2e2e2;
+    margin-top: -5px;
+}
+.trending_sec .trending_container .sec_one .title_post:hover .header_link{
+    color: #1abea6;
+}
+.trending_sec .trending_container .sec_one .title_link a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.7rem;
+    display: block;
+    font-weight: 600;
+    padding: 1rem 0  1rem 0;
+    border-bottom: 1px dotted #000000;
+}
+.trending_sec .trending_container .sec_one a:hover{
+    color: #1abea6;
+}
+/* ? Trending Title Card  Section Start//  First  Five Card*/
+.trending_sec .trending_container .sec_two{
+    padding: 0 2rem;
+}
+.trending_sec .trending_container .sec_two .title_cardSec{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.trending_sec .trending_container .sec_two{
+    margin: 2rem 0;
+}
+.trending_sec .trending_container .sec_two .title_cardSec img{
+    width: 100%;
+    height: 22rem;
+}
+.trending_sec .trending_container .sec_two .title_cardSec .link_a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.7rem;
+    display: block;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background-color: #e2e2e2;
+    margin-top: -5px;
+}
+.trending_sec .trending_container .sec_two .title_cardSec .link_a:hover{
+    color: #1abea6;
+}
+.trending_sec .trending_container .sec_two .title_cardSec div:hover .link_a{
+    color: #1abea6;
+}
+
+.trending_sec .trending_container .sec_two .btn_div{
+    display: flex;
+    align-items: center;
+    /* justify-items: end; */
+    position: relative;
+    margin: 1rem 0 0 0;
+}
+.trending_sec .trending_container .sec_two .btn_div a{
+    position: relative;
+    background-color: #1abea6;
+    color: #ffffff;
+    /* color: #000000; */
+    font-weight: 400;
+    padding: 0.8rem 1rem 1rem 0.5rem;
+    text-decoration: none;
+    border: 2px solid #1abea6;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border-radius: 0.4rem;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+.trending_sec .trending_container .sec_two .btn_div span{
+    background-color: #ececec;
+    padding: 0.9rem 0.9rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+/* !  --__--__ Trending Section End __---__--__--*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* !------- Media Screen Responsive Style */
+
+
+@media screen and (max-width: 860px){
+    /* !  --__--__Trending Section Start   __---__--__--*/
+    .trending_sec .trending_container .sec_one{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2,  auto);
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    /* !  --__--__Trending Section End   __---__--__--*/
+    /* !  --__--__ Tech, Health, Smart_home Section Start __---__--__--*/
+    .tech .tech_container .small_product,
+    .health .health_container .small_product,
+    .smart_home .smart_home_container .small_product
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .tech .tech_container .highlight_card a img{
+        height: 30rem;
+    }
+    .health_container .highlight_card a img{
+        height: 30rem;
+    }
+    /* !  --__--__ Tech, Health, Smart_home Section End __---__--__--*/
+    /* !  --__--__  Pets, Sports Section Start Start---__--__--*/
+    .pets .pets_container .highlight_card,
+    .sports .sports_container .highlight_card
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2. 1fr);
+    }
+    .pets .pets_container .small_product,
+    .sports .sports_container .small_product
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5 1fr);
+    }
+    /* !  --__--__  Pets, Sports Section Start End---__--__--*/
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+    /* !  --__--__ Tech, Health, Smart_home Section Start __---__--__--*/
+    .tech .tech_container .highlight_card a img,
+    .health .health_container .highlight_card a img,
+    .smart_home .smart_home_container .highlight_card a img
+    {
+        height: 28rem;
+    }
+    /* !  --__--__ Tech, Health, Smart_home Section End __---__--__--*/
+    /* !  --__--__Trending Section Start   __---__--__--*/
+    .trending_sec .title_post img{
+        height: 26rem;
+    }
+    /* !  --__--__Trending Section End   __---__--__--*/    
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 545px){
+    /* !  --__--__Trending Section Start   __---__--__--*/
+    .trending_sec .trending_container .sec_two .title_cardSec{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+    .trending_sec .title_post img{
+        height: 20rem;
+    }
+    .trending_sec .trending_container .sec_one .title_post .header_link{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .trending_sec .trending_container .sec_one .title_link .link_title a{
+        font-weight: 600;
+        font-size: 1.7rem;
+        letter-spacing: 0px;
+    }
+    .trending_sec .trending_container .sec_one .title_link a{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .trending_sec .trending_container .sec_two .title_cardSec .link_a{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    /* !  --__--__Trending Section End   __---__--__--*/    
+    /* !  --__--__ Tech, Health, Smart_home Section Start __---__--__--*/
+    .tech .tech_container .small_product,
+    .health .health_container .small_product,
+    .smart_home .smart_home_container .small_product
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        justify-content: center;
+    }
+    .tech .tech_container .highlight_card a img,
+    .health .health_container .highlight_card a img,
+    .smart_home .smart_home_container .highlight_card a img
+    {
+        height: 18rem;
+    }
+    .tech .tech_container .highlight_card .title_link,
+    .health .health_container .highlight_card .title_link,
+    .smart_home .smart_home_container .highlight_card .title_link
+    {
+        font-size: 1.6rem;
+    }
+    .tech .tech_container .small_product div .title_link,
+    .health .health_container .small_product div .title_link,
+    .smart_home .smart_home_container .small_product div .title_link
+    {
+        font-size: 1.6rem;
+    }
+    .tech .tech_container .small_product div .description,
+    .health .health_container .small_product div .description,
+    .smart_home .smart_home_container .small_product div .description
+    {
+        font-size: 1.4rem;
+    }
+    .tech .tech_container .small_product div a img,
+    .health .health_container .small_product div a img,
+    .smart_home .smart_home_container .small_product div a img
+    {
+        width: 100%;
+        height: 18rem;
+        margin: 0 0 1rem 0;
+    }
+    /* !  --__--__ Tech, Health, Smart_home Section End __---__--__--*/
+
+    /* !  --__--__  Pets, Sports Section Start Start---__--__--*/
+    .pets .pets_container .small_product,
+    .sports .sports_container .small_product
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    .pets .pets_container .highlight_card a img,
+    .sports .sports_container .highlight_card a img
+    {
+        height: 18rem;
+    }
+    .pets .pets_container .small_product div a img,
+    .sports .sports_container .small_product div a img
+    {
+        height: 18rem;
+    }
+    .pets .pets_container .highlight_card .title_link,
+    .sports .sports_container .highlight_card .title_link
+    {
+        font-size: 1.6rem;
+    }
+    .pets .pets_container .highlight_card .title_pera,
+    .sports .sports_container .highlight_card .title_pera
+    {
+        font-size: 1.4rem;
+    }
+    .pets .pets_container .small_product div .title_link,
+    .sports .sports_container .small_product div .title_link
+    {
+        font-size: 1.6rem;
+    }
+    .pets .pets_container .small_product div .description,
+    .sports .sports_container .small_product div .description
+    {
+        font-size: 1.4rem;
+    }
+    /* !  --__--__  Pets, Sports Section Start ---__--__--*/
+}
+
+
+
+
