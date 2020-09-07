@@ -1,6 +1,9 @@
 RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
 
-RewriteRule ^done index.html [NC,L]
+RewriteRule ^index index.html [NC,L]
 RewriteRule ^tech tech.html [NC,L]
 RewriteRule ^pets pets.html [NC,L]
 RewriteRule ^health health.html [NC,L]
